@@ -1,0 +1,16 @@
+body{
+  background: tan;
+  text-align: center;
+}
+h3{
+  margin-top: 40px;
+}
+
+.blue{
+  color: blue;
+}
+
+
+ul {
+  list-style: none;
+}
