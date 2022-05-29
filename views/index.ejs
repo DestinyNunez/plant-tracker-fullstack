@@ -8,36 +8,37 @@
   <link rel="stylesheet" href="font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
-    referrerpolicy="no-referrer" />
+  referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <h1>Plant Oasis</h1>
-  <h2>Did you water your plants?</h2>
+  <h2>Did you water your plants? If so, click the droplet once you've added your plant.</h2>
 
 
-  <h3>Plants Watered</h3>
-  <ul class="messages">
-    <% for(let i=0; i<messages.length; i++) {%>
-    <li class="message <%= messages[i].watered ? 'blue' : '' %>">
-      <span><%= messages[i].name %></span>
-      <span><%= messages[i].day %></span>
-      <span><i class="fa-solid fa-droplet <%= messages[i].watered ? 'blue' : '' %>"  aria-hidden="true"></i></span>
-      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
-    </li>
-    <% } %>
-  </ul>
+    <h3>Plants Watered</h3>
+    <ul class="messages">
+      <% for(let i=0; i<messages.length; i++) {%>
+        <li class="message <%= messages[i].watered ? 'blue' : '' %>">
+          <span><%= messages[i].name %></span>
+          <span><%= messages[i].day %></span>
+          <span><i class="fa-solid fa-droplet <%= messages[i].watered ? 'blue' : '' %>" aria-hidden="true"></i></span>
+          <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+        </li>
+        <% } %>
+      </ul>
 
-  <h2>Add a Plant</h2>
+      <h2>Add a Plant</h2>
 
-  <form action="/items" method="POST">
-    <input type="text" placeholder="Plant" name="name">
-    <input type="text" placeholder="day" name="day">
-    <button type="submit">Submit</button>
-  </form>
+      <form action="/items" method="POST">
+        <input type="text" placeholder="plant Name" name="name">
+        <input type="text" placeholder="Day Watered" name="day">
+        <button type="submit">Submit</button>
+      </form>
 
-  <script src="main.js"></script>
 
-</body>
+    <script src="main.js"></script>
 
-</html>
+  </body>
+
+  </html>
