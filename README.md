@@ -1,4 +1,4 @@
-! Plant Tracker
+#Plant Tracker
 
 ## Installation
 
