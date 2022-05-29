@@ -1,5 +1,4 @@
-#Plant Tracker
-
+# plant-tracker-fullstack
 ## Installation
 
 1. Clone repo
@@ -9,4 +8,4 @@
 
 1. run `npm run savage`
 2. Navigate to `localhost:3000`
-# plant-tracker-fullstack
+
